@@ -5,6 +5,7 @@ This project is the source code repo for the blog https://thesundayprogrammer.wo
 This is the Ocaml version
 
 The two versions are compiled using:
+
     ocamlc str.cma mycsv.ml bounds.ml sorted_array.ml
-    ocamlc str.cma mycsv.ml bounds.ml heirarchy.m
-Ocaml version
+    ocamlc str.cma mycsv.ml heirarchy.m
+    
