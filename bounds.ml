@@ -1,3 +1,5 @@
+(* uses the C convention [closed open)  intervals *)
+
 let lower_bound cmp arr x =
    let rec aux lo hi =
      if lo = hi then lo
