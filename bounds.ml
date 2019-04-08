@@ -1,5 +1,6 @@
 (* uses the C convention [closed open)  intervals *)
-
+module Array = struct
+  include Array 
 let lower_bound cmp arr x =
    let rec aux lo hi =
      if lo = hi then lo
@@ -17,3 +18,4 @@ let upper_bound cmp arr x =
        then aux lo mid
        else aux  (mid + 1) hi
   in aux 0 (Array.length arr) 
+end
