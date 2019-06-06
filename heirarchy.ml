@@ -22,7 +22,7 @@ let init () = Hashtbl.create 1000
 let () =
 let children_map = init () in 
 (
-Mycsv.import "heirarchy.dat" "," |> List.iter (fun x -> gen_map x children_map) ;
+Mycsv.import "heirarchy.dat" ',' |> List.iter (fun x -> gen_map x children_map) ;
 let hd = find_root children_map 0 in
 prn_tree hd children_map 1
 )

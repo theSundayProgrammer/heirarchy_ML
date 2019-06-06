@@ -28,7 +28,7 @@ let compare_child x y =
   let (_, _, q) = y in
      compare p q
   in
-  let arr = Mycsv.import Sys.argv.(1) "," |> Array.of_list  in 
+  let arr = Mycsv.import Sys.argv.(1) ',' |> Array.of_list  in 
   Array.sort compare_child arr;
   let root = Array.lower_bound compare_child arr (0,"",0) in 
   print_tree arr arr.(root) 0
